@@ -12,7 +12,6 @@ export default class Counter extends React.Component {
         })
     }
     render() {
-    //   const [count, setCount] = useState(0)
     return (
       <>
          <h1>Counter App</h1>
@@ -20,10 +19,6 @@ export default class Counter extends React.Component {
          <button onClick={()=>{this.handleclick(1)}}>+</button>
          <button onClick={()=>{this.handleclick(-1)}}>-</button>
          <button onClick={()=>{this.handleclick(-this.state.count)}}>Reset</button>
-       {/* <h2>{count}</h2>
-        <button onClick={() => setCount((count) => count + 1)}>+</button>
-        <button onClick={() => setCount((count) => count - 1)}>-</button>
-        <button onClick={() => setCount((count) => count -count)}>Reset</button>  */}
       </>
     )
   }
